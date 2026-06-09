@@ -1,0 +1,60 @@
+﻿using api_rest_with_aspnet_10.Context;
+using api_rest_with_aspnet_10.Models.Base;
+using Microsoft.EntityFrameworkCore;
+
+namespace api_rest_with_aspnet_10.Repositories.Implementations;
+
+public class GenericRepository<T> : IRepository<T> where T : BaseEntity
+{
+    private readonly MSSQLContext _context;
+    private readonly DbSet<T> _dataset;
+
+    public GenericRepository(MSSQLContext context)
+    {
+        _context = context;
+        _dataset = _context.Set<T>();
+    }
+
+    public List<T> FindAll()
+    {
+        return _dataset.ToList();
+    }
+    public T FindById(long id)
+    {
+        return _dataset.Find(id);
+    }
+
+    public T Create(T item)
+    {
+        _context.Add(item);
+        _context.SaveChanges();
+        return item;
+    }
+
+    public T Update(T item)
+    {
+        var existingItem = _dataset.Find(item.Id);
+        if (existingItem == null)
+            return null;
+
+        _context.Entry(existingItem).CurrentValues.SetValues(item);
+        _context.SaveChanges();
+
+        return item;
+    }
+    public void Delete(long id)
+    {
+        var existingItem = _context.Persons.Find(id);
+
+        if (existingItem == null)
+            return;
+
+        _context.Remove(existingItem);
+        _context.SaveChanges();
+    }
+
+    public bool Exists(long id)
+    {
+        return _dataset.Any(e => e.Id == id);
+    }
+}

@@ -1,0 +1,20 @@
+﻿using api_rest_with_aspnet_10.Context;
+using Microsoft.EntityFrameworkCore;
+
+namespace api_rest_with_aspnet_10.Configurations;
+
+public static class DatabaseConfig
+{
+    public static IServiceCollection AddDatabaseConfiguration(this IServiceCollection services, IConfiguration configuration)
+    {
+        var connectionString = configuration["ConnectionStrings:DefaultConnection"];
+        if (String.IsNullOrEmpty(connectionString))
+            throw new ArgumentNullException("Conexão com banco de dados não foi estabelecida.");
+
+
+        services.AddDbContext<MSSQLContext>(options =>
+            options.UseSqlServer(connectionString));
+
+        return services;
+    }
+}
