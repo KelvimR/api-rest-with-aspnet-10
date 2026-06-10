@@ -25,7 +25,6 @@ builder.Services.AddScoped<IBookService, BookServicesImpl>();
 //builder.Services.AddScoped<IBookRepository, BookRepository>(); // Removido para usar repository genérico
 builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -37,5 +36,6 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.UseSwaggerSpecification(); // Configuração do middleware do Swagger para ser usado na aplicação, ou seja, estou dizendo para a aplicação usar o Swagger para gerar a documentação da API e também estou configurando o endpoint do Swagger para acessar a documentação gerada.
+app.UseScalarSpecification();  // So declaramos aqui que queremos utilizar, pois OpenAPI já está declarado
 
 app.Run();

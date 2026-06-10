@@ -7,12 +7,8 @@
       "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:controllers\\bookcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\configurations\\scalarconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:configurations\\scalarconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +30,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScalarConfig.cs",
+              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Configurations\\ScalarConfig.cs",
+              "RelativeDocumentMoniker": "Configurations\\ScalarConfig.cs",
+              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Configurations\\ScalarConfig.cs",
+              "RelativeToolTip": "Configurations\\ScalarConfig.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-10T15:21:26.696Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABBAAAAAAAAAA==",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T14:44:04.517Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BookController.cs",
-              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\BookController.cs",
-              "RelativeDocumentMoniker": "Controllers\\BookController.cs",
-              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\BookController.cs",
-              "RelativeToolTip": "Controllers\\BookController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T14:41:23.415Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PersonController.cs",
-              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "Controllers\\PersonController.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAkwFMAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-10T14:37:27.057Z",
+              "WhenOpened": "2026-06-10T15:20:55.105Z",
               "EditorCaption": ""
             }
           ]
