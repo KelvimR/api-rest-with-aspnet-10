@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("api-rest-with-aspnet-10")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e3d9571c43bb1acba2ddf17b17c0c84842993566")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08e148866cb381dec01bc9f740cf66573171461f")]
 [assembly: System.Reflection.AssemblyProductAttribute("api-rest-with-aspnet-10")]
 [assembly: System.Reflection.AssemblyTitleAttribute("api-rest-with-aspnet-10")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

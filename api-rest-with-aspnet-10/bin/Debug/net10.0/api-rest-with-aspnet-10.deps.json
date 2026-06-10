@@ -10,6 +10,7 @@
         "dependencies": {
           "Evolve": "3.2.0",
           "Mapster": "10.0.7",
+          "Microsoft.AspNetCore.Mvc.Formatters.Xml.Extensions": "10.0.0",
           "Microsoft.Data.SqlClient": "7.0.1",
           "Microsoft.EntityFrameworkCore": "10.0.9",
           "Microsoft.EntityFrameworkCore.SqlServer": "10.0.9",
@@ -46,6 +47,14 @@
           "lib/netstandard2.0/Mapster.Core.dll": {
             "assemblyVersion": "10.0.7.0",
             "fileVersion": "10.0.7.0"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Formatters.Xml.Extensions/10.0.0": {
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Mvc.Formatters.Xml.Extensions.dll": {
+            "assemblyVersion": "10.0.0.0",
+            "fileVersion": "10.0.0.0"
           }
         }
       },
@@ -453,6 +462,13 @@
       "sha512": "sha512-73Bd0aZ+t6DoG3X4FYDfOyVgvLxgUXJKIjrps3W1n7MR03DIWI+sL62VqQSPwuJdn7WJb8HYhkH/BNZ6ZlJydw==",
       "path": "mapster.core/10.0.7",
       "hashPath": "mapster.core.10.0.7.nupkg.sha512"
+    },
+    "Microsoft.AspNetCore.Mvc.Formatters.Xml.Extensions/10.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-UrFSHmwJJSql9rvcErEuS3k/BH86UbR6AsZ6Rz9AVO4L1LxzQZIpqvGP92it2ur7V25X8iLCuCDHxac3LH1SKw==",
+      "path": "microsoft.aspnetcore.mvc.formatters.xml.extensions/10.0.0",
+      "hashPath": "microsoft.aspnetcore.mvc.formatters.xml.extensions.10.0.0.nupkg.sha512"
     },
     "Microsoft.Bcl.Cryptography/9.0.13": {
       "type": "package",

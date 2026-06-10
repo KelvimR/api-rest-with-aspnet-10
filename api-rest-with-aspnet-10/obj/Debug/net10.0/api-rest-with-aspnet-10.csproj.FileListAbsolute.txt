@@ -79,3 +79,5 @@ C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\api-re
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\api-rest-with-aspnet-10.genruntimeconfig.cache
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\ref\api-rest-with-aspnet-10.dll
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\api-rest-with-aspnet-10.sourcelink.json
+C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\bin\Debug\net10.0\Microsoft.AspNetCore.Mvc.Formatters.Xml.Extensions.dll
+C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\api-rest-with-aspnet-10.MvcApplicationPartsAssemblyInfo.cs
