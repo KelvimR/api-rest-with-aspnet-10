@@ -18,6 +18,9 @@ public class BookController : ControllerBase
 
 
     [HttpGet]
+    [ProducesResponseType(200, Type = typeof(List<BookDTO>))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Get()
     {
         _logger.LogInformation("Getting all books");
@@ -25,6 +28,9 @@ public class BookController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [ProducesResponseType(200, Type = typeof(BookDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Get(int id)
     {
         _logger.LogInformation("Fething book with ID {id}", id);
@@ -39,6 +45,9 @@ public class BookController : ControllerBase
     }
 
     [HttpPost]
+    [ProducesResponseType(200, Type = typeof(BookDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Post([FromBody] BookDTO book)
     {
         _logger.LogInformation("Creating new person: {title}", book.Title);
@@ -59,6 +68,9 @@ public class BookController : ControllerBase
     }
 
     [HttpPut]
+    [ProducesResponseType(200, Type = typeof(BookDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Update([FromBody] BookDTO book)
     {
         _logger.LogInformation("Updating book with ID {id}", book.Id);
@@ -75,6 +87,9 @@ public class BookController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [ProducesResponseType(204, Type = typeof(BookDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Delete(int id)
     {
         _logger.LogInformation("Deleting book with ID {id}", id);
