@@ -8,7 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+    .AddContentNegociation(); //Precisa ser iniciado junto ao controllers para que o Content Negociation funcione corretamente
 
 //Dependency Injection
 builder.Services.AddDatabaseConfiguration(builder.Configuration);
