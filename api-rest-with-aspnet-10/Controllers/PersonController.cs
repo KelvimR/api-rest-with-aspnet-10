@@ -18,6 +18,9 @@ public class PersonController : ControllerBase
     }
 
     [HttpGet]
+    [ProducesResponseType(200, Type = typeof(List<PersonDTO>))]
+    [ProducesResponseType(400)] // Bad Request: Utilizado quando a solicitação do cliente é inválida ou malformada.
+    [ProducesResponseType(401)] // Unauthorized: Utilizado quando a autenticação é necessária e falhou ou ainda não foi fornecida.
     public IActionResult Get()
     {
         _logger.LogInformation("Getting all people");
@@ -25,6 +28,9 @@ public class PersonController : ControllerBase
     }
 
     [HttpGet("{id}")]
+    [ProducesResponseType(200, Type = typeof(PersonDTO))]
+    [ProducesResponseType(400)] 
+    [ProducesResponseType(401)]
     public IActionResult Get(long id)
     {
         _logger.LogInformation("Fething person with ID {id}", id);
@@ -39,6 +45,9 @@ public class PersonController : ControllerBase
     }
 
     [HttpPost]
+    [ProducesResponseType(200, Type = typeof(PersonDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Post([FromBody] PersonDTO person)
     {
         _logger.LogInformation("Creating new person: {fistName}", person.FirstName);
@@ -53,6 +62,9 @@ public class PersonController : ControllerBase
     }
 
     [HttpPut]
+    [ProducesResponseType(200, Type = typeof(PersonDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Update([FromBody] PersonDTO person)
     {
         _logger.LogInformation("Updating person with ID {id}", person.Id);
@@ -69,6 +81,9 @@ public class PersonController : ControllerBase
     }
 
     [HttpDelete("{id}")]
+    [ProducesResponseType(204, Type = typeof(PersonDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
     public IActionResult Delete(int id)
     {
         _logger.LogInformation("Deleting person with ID {id}", id);
