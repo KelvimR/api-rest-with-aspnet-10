@@ -3,15 +3,10 @@
   "WorkspaceRootPath": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F5B2012-11AF-4338-8DD8-2FE18D996C16}|..\\api-rest-with-aspnet-10-tests\\api-rest-with-aspnet-10-tests.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\integrationtests\\tools\\sqlserverfixture.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F5B2012-11AF-4338-8DD8-2FE18D996C16}|..\\api-rest-with-aspnet-10-tests\\api-rest-with-aspnet-10-tests.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\integrationtests\\swaggerintegrationtests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\configurations\\evolveconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:configurations\\evolveconfig.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4F5B2012-11AF-4338-8DD8-2FE18D996C16}|..\\api-rest-with-aspnet-10-tests\\api-rest-with-aspnet-10-tests.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\integrationtests\\scalarintegrationstests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -21,7 +16,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -32,42 +27,33 @@
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "EvolveConfig.cs",
-              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Configurations\\EvolveConfig.cs",
-              "RelativeDocumentMoniker": "Configurations\\EvolveConfig.cs",
-              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Configurations\\EvolveConfig.cs",
-              "RelativeToolTip": "Configurations\\EvolveConfig.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAgwCQAAABBAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T14:32:35.747Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-06-11T14:28:58.084Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SqlServerFixture.cs",
-              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\IntegrationTests\\Tools\\SqlServerFixture.cs",
-              "RelativeDocumentMoniker": "..\\api-rest-with-aspnet-10-tests\\IntegrationTests\\Tools\\SqlServerFixture.cs",
-              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\IntegrationTests\\Tools\\SqlServerFixture.cs",
-              "RelativeToolTip": "..\\api-rest-with-aspnet-10-tests\\IntegrationTests\\Tools\\SqlServerFixture.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAVAAAAAAAAAA==",
+              "Title": "SwaggerIntegrationTests.cs",
+              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\IntegrationTests\\SwaggerIntegrationTests.cs",
+              "RelativeDocumentMoniker": "..\\api-rest-with-aspnet-10-tests\\IntegrationTests\\SwaggerIntegrationTests.cs",
+              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\IntegrationTests\\SwaggerIntegrationTests.cs",
+              "RelativeToolTip": "..\\api-rest-with-aspnet-10-tests\\IntegrationTests\\SwaggerIntegrationTests.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAAAC4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-11T14:25:15.277Z",
+              "WhenOpened": "2026-06-11T18:15:55.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ScalarIntegrationsTests.cs",
+              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\IntegrationTests\\ScalarIntegrationsTests.cs",
+              "RelativeDocumentMoniker": "..\\api-rest-with-aspnet-10-tests\\IntegrationTests\\ScalarIntegrationsTests.cs",
+              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10-tests\\IntegrationTests\\ScalarIntegrationsTests.cs",
+              "RelativeToolTip": "..\\api-rest-with-aspnet-10-tests\\IntegrationTests\\ScalarIntegrationsTests.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA8wBwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-11T18:15:28.317Z",
               "EditorCaption": ""
             }
           ]

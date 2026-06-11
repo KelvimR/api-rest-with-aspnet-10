@@ -31,6 +31,11 @@
   </ItemGroup>
 
   <ItemGroup>
+	  <Content Include="..\api-rest-with-aspnet-10\db\Migrations\**\*.sql" Link="db\migrations\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always"/>
+	  <Content Include="..\api-rest-with-aspnet-10\db\dataset\**\*.sql" Link="db\dataset\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always"/>
+  </ItemGroup>
+	
+  <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
 
