@@ -14,8 +14,11 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="FluentAssertions" Version="8.10.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="10.0.9" />
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.6.0" />
     <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="Testcontainers" Version="4.12.0" />
+    <PackageReference Include="Testcontainers.MsSql" Version="4.12.0" />
     <PackageReference Include="xunit" Version="2.9.3" />
     <PackageReference Include="xunit.runner.visualstudio" Version="3.1.5">
       <PrivateAssets>all</PrivateAssets>
@@ -27,6 +30,11 @@
     <ProjectReference Include="..\api-rest-with-aspnet-10\api-rest-with-aspnet-10.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+	  <Content Include="..\api-rest-with-aspnet-10\db\Migrations\**\*.sql" Link="db\migrations\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always"/>
+	  <Content Include="..\api-rest-with-aspnet-10\db\dataset\**\*.sql" Link="db\dataset\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="Always"/>
+  </ItemGroup>
+	
   <ItemGroup>
     <Using Include="Xunit" />
   </ItemGroup>
