@@ -6,7 +6,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace api_rest_with_aspnet_10_tests;
+namespace api_rest_with_aspnet_10_tests.UnitTests;
 
 public class PersonConverterTests
 {

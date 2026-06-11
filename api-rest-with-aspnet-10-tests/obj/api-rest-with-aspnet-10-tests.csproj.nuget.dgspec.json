@@ -61,6 +61,10 @@
               "target": "Package",
               "version": "[8.10.0, )"
             },
+            "Microsoft.AspNetCore.Mvc.Testing": {
+              "target": "Package",
+              "version": "[10.0.9, )"
+            },
             "Microsoft.NET.Test.Sdk": {
               "target": "Package",
               "version": "[18.6.0, )"
@@ -68,6 +72,14 @@
             "Moq": {
               "target": "Package",
               "version": "[4.20.72, )"
+            },
+            "Testcontainers": {
+              "target": "Package",
+              "version": "[4.12.0, )"
+            },
+            "Testcontainers.MsSql": {
+              "target": "Package",
+              "version": "[4.12.0, )"
             },
             "coverlet.collector": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
