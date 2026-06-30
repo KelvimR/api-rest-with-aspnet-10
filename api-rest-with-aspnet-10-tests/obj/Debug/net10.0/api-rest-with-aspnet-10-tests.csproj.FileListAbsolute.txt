@@ -492,3 +492,4 @@ C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10-tests\bin\Debug\net10.0\
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10-tests\bin\Debug\net10.0\refs\Microsoft.Extensions.Primitives.dll
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10-tests\bin\Debug\net10.0\refs\System.Diagnostics.EventLog.dll
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10-tests\bin\Debug\net10.0\db\migrations\V5__Alter_Table_Person.sql
+C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10-tests\bin\Debug\net10.0\db\migrations\V7__Create_Table_Users.sql

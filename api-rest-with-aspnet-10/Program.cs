@@ -1,3 +1,5 @@
+using api_rest_with_aspnet_10.Auth.Contract;
+using api_rest_with_aspnet_10.Auth.Tools;
 using api_rest_with_aspnet_10.Configurations;
 using api_rest_with_aspnet_10.Repositories;
 using api_rest_with_aspnet_10.Repositories.Implementations;
@@ -19,11 +21,13 @@ builder.Services.AddCorsConfiguration(builder.Configuration);
 //Dependency Injection
 builder.Services.AddDatabaseConfiguration(builder.Configuration);
 builder.Services.AddEvolveConfiguration(builder.Configuration, builder.Environment);
-builder.Services.AddScoped<IPersonService, PersonServicesImpl>();
+builder.Services.AddAuthConfiguration(builder.Configuration);
 
+builder.Services.AddScoped<IPasswordHasher, Sha256PasswordHasher>();
+builder.Services.AddScoped<IPersonService, PersonServicesImpl>();
 builder.Services.AddScoped<IPersonRepository, PersonRepository>();
 builder.Services.AddScoped<IBookService, BookServicesImpl>();
-//builder.Services.AddScoped<IBookRepository, BookRepository>(); // Removido para usar repository genérico
+builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped(typeof(IRepository<>), typeof(GenericRepository<>));
 
 var app = builder.Build();
@@ -31,9 +35,11 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 
 app.UseHttpsRedirection();
-
-app.UseAuthorization();
 app.UseRouting();
+
+app.UseAuthentication();
+app.UseAuthorization();
+
 app.UserCorsConfiguration();
 
 app.MapControllers();

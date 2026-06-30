@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:repositories\\implementations\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:repositories\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,15 +27,32 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PersonController.cs",
-              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "Controllers\\PersonController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAowGkAAAAJAAAAAAAAAA==",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\Implementations\\UserRepository.cs",
+              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Repositories\\Implementations\\UserRepository.cs",
+              "RelativeToolTip": "Repositories\\Implementations\\UserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T14:15:33.03Z",
+              "WhenOpened": "2026-06-30T16:46:45.808Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Repositories\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "Repositories\\IUserRepository.cs",
+              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Repositories\\IUserRepository.cs",
+              "RelativeToolTip": "Repositories\\IUserRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-30T16:45:55.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",

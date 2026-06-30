@@ -1,12 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "b9mA86Y13UI=",
+  "dgSpecHash": "4iMJEtFj0Ik=",
   "success": true,
   "projectFilePath": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ossig\\.nuget\\packages\\evolve\\3.2.0\\evolve.3.2.0.nupkg.sha512",
     "C:\\Users\\ossig\\.nuget\\packages\\mapster\\10.0.7\\mapster.10.0.7.nupkg.sha512",
     "C:\\Users\\ossig\\.nuget\\packages\\mapster.core\\10.0.7\\mapster.core.10.0.7.nupkg.sha512",
+    "C:\\Users\\ossig\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\10.0.9\\microsoft.aspnetcore.authentication.jwtbearer.10.0.9.nupkg.sha512",
     "C:\\Users\\ossig\\.nuget\\packages\\microsoft.aspnetcore.mvc.formatters.xml.extensions\\10.0.0\\microsoft.aspnetcore.mvc.formatters.xml.extensions.10.0.0.nupkg.sha512",
     "C:\\Users\\ossig\\.nuget\\packages\\microsoft.bcl.cryptography\\9.0.13\\microsoft.bcl.cryptography.9.0.13.nupkg.sha512",
     "C:\\Users\\ossig\\.nuget\\packages\\microsoft.data.sqlclient\\7.0.1\\microsoft.data.sqlclient.7.0.1.nupkg.sha512",
