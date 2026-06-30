@@ -10,4 +10,6 @@ public interface IPersonService
     PersonDTO Update(PersonDTO person);
     void Delete(long id);
 
+    PersonDTO Disable(long id);
+
 }

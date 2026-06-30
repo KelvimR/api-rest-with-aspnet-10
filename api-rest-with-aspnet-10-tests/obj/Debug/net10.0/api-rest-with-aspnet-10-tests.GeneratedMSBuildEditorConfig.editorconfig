@@ -8,6 +8,7 @@ build_property.ProjectTypeGuids =
 build_property.InvariantGlobalization = 
 build_property.PlatformNeutralAssembly = 
 build_property.EnforceExtendedAnalyzerRules = 
+build_property.EntryPointFilePath = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = api_rest_with_aspnet_10_tests
 build_property.ProjectDir = C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10-tests\

@@ -71,7 +71,6 @@ C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\static
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\staticwebassets.development.json
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\staticwebassets.build.endpoints.json
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\swae.build.ex.cache
-C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\api-rest.4E28188C.Up2Date
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\api-rest-with-aspnet-10.dll
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\refint\api-rest-with-aspnet-10.dll

@@ -6,7 +6,7 @@ namespace api_rest_with_aspnet_10.Repositories.Implementations;
 
 public class GenericRepository<T> : IRepository<T> where T : BaseEntity
 {
-    private readonly MSSQLContext _context;
+    protected readonly MSSQLContext _context;
     private readonly DbSet<T> _dataset;
 
     public GenericRepository(MSSQLContext context)

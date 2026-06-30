@@ -1,6 +1,8 @@
 ﻿using api_rest_with_aspnet_10.Models.Base;
+using Microsoft.AspNetCore.Components.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Reflection.Metadata.Ecma335;
 
 namespace api_rest_with_aspnet_10.Models;
 
@@ -26,6 +28,9 @@ public class Person : BaseEntity
     [Column("gender", TypeName = "varchar(6)")]
     [MaxLength(6)]
     public string Gender { get; set; }
+
+    [Column("enabled")]
+    public bool Enabled { get; set; }
 
     //[NotMapped] // Indica que não sera mapeado para o banco de dados
     //public DateTime? Birthday { get; set; }

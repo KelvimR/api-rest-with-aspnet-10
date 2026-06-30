@@ -1,11 +1,13 @@
 ﻿using api_rest_with_aspnet_10.Data.DTO.V1;
 using api_rest_with_aspnet_10.Services;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_rest_with_aspnet_10.Controllers;
 
 [ApiController]
 [Route("api/[controller]/v1")]
+//[EnableCors("LocalPolicy")] // Assim aplica o cors a todo o controller
 public class PersonController : ControllerBase
 {
     private readonly IPersonService _personService;
@@ -48,14 +50,19 @@ public class PersonController : ControllerBase
     [ProducesResponseType(200, Type = typeof(PersonDTO))]
     [ProducesResponseType(400)]
     [ProducesResponseType(401)]
+    //[EnableCors("MultiplePolicy")] // Assim eu aplico somente a este endpoint, tenho granularidade isso configurado lá no config do cors
     public IActionResult Post([FromBody] PersonDTO person)
     {
-        _logger.LogInformation("Creating new person: {fistName}", person.FirstName);
+        var sanitizedFirstName = (person.FirstName ?? string.Empty)
+            .Replace("\r", string.Empty)
+            .Replace("\n", string.Empty);
+
+        _logger.LogInformation("Creating new person: {fistName}", sanitizedFirstName);
 
         var createdPerson = _personService.Create(person);
         if (createdPerson == null)
         {
-            _logger.LogError("Failed to create person: {fistName}", person.FirstName);
+            _logger.LogError("Failed to create person: {fistName}", sanitizedFirstName);
             return NotFound();
         }
         return Ok(createdPerson);
@@ -89,6 +96,24 @@ public class PersonController : ControllerBase
         _logger.LogInformation("Deleting person with ID {id}", id);
         _personService.Delete(id);
         return NoContent();
+    }
+
+    [HttpPatch("{id}")]
+    [ProducesResponseType(200, Type = typeof(PersonDTO))]
+    [ProducesResponseType(400)]
+    [ProducesResponseType(401)]
+    public IActionResult Disable(long id)
+    {
+        _logger.LogInformation("Disabling person with ID {id}", id);
+        var disable = _personService.Disable(id);
+        if(disable == null)
+        {
+            _logger.LogError("Failed to disable person with ID {id}", id);
+            return NotFound();
+        }
+
+        _logger.LogDebug("Person with ID {id} disable successfully.", id);
+        return Ok(disable);
     }
 }
 
