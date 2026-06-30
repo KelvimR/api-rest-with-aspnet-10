@@ -53,12 +53,16 @@ public class PersonController : ControllerBase
     //[EnableCors("MultiplePolicy")] // Assim eu aplico somente a este endpoint, tenho granularidade isso configurado lá no config do cors
     public IActionResult Post([FromBody] PersonDTO person)
     {
-        _logger.LogInformation("Creating new person: {fistName}", person.FirstName);
+        var sanitizedFirstName = (person.FirstName ?? string.Empty)
+            .Replace("\r", string.Empty)
+            .Replace("\n", string.Empty);
+
+        _logger.LogInformation("Creating new person: {fistName}", sanitizedFirstName);
 
         var createdPerson = _personService.Create(person);
         if (createdPerson == null)
         {
-            _logger.LogError("Failed to create person: {fistName}", person.FirstName);
+            _logger.LogError("Failed to create person: {fistName}", sanitizedFirstName);
             return NotFound();
         }
         return Ok(createdPerson);
