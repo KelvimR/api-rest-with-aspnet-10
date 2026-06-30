@@ -85,3 +85,4 @@ C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\bin\Debug\net10.0\Swashb
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\bin\Debug\net10.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\bin\Debug\net10.0\Scalar.AspNetCore.dll
+C:\TEMP\api-rest-with-aspnet-10\api-rest-with-aspnet-10\obj\Debug\net10.0\staticwebassets.upToDateCheck.txt

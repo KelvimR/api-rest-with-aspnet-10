@@ -10,6 +10,7 @@ namespace api_rest_with_aspnet_10.Context
         }
 
         public DbSet<Person> Persons { get; set; }
-        public DbSet<Book> Books { get; set; } // Desafio
+        public DbSet<Book> Books { get; set; } 
+        public DbSet<User> Users { get; set; }
     }
 }
