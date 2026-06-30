@@ -9,10 +9,10 @@ namespace api_rest_with_aspnet_10.Services.Implementations;
 
 public class PersonServicesImpl : IPersonService
 {
-    private IRepository<Person> _repository;
+    private IPersonRepository _repository;
     private readonly PersonConverter _converter;
 
-    public PersonServicesImpl(IRepository<Person> repository)
+    public PersonServicesImpl(IPersonRepository repository)
     {
         _repository = repository;
         _converter = new PersonConverter(); // Não foi atráves de injeção de dependência porque o converter não tem dependências, ou seja, é uma classe simples que pode ser instanciada diretamente.
@@ -47,5 +47,11 @@ public class PersonServicesImpl : IPersonService
     public void Delete(long id)
     {
         _repository.Delete(id);
+    }
+
+    public PersonDTO Disable(long id)
+    {
+        var entity = _repository.Disable(id);
+        return entity.Adapt<PersonDTO>();
     }
 }

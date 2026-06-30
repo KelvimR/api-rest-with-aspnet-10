@@ -18,4 +18,6 @@ public class PersonDTO
     public string Gender { get; set; }
     //[JsonConverter(typeof(DateSerializer))] //Aqui estamos dizendo que a propriedade BirthDate deve ser serializada e desserializada usando o DateSerializer personalizado que criamos.
     public DateTime? BirthDate { get; set; }
+    public bool Enabled { get; set; }
+
 }
