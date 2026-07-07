@@ -13,6 +13,13 @@ public class AuthController : ControllerBase
     private readonly ILogger<AuthController> _logger;
     private readonly IUserAuthService _userAuthService;
 
+    private static string SanitizeForLog(string? value)
+    {
+        return (value ?? string.Empty)
+            .Replace("\r", string.Empty)
+            .Replace("\n", string.Empty);
+    }
+
     public AuthController(ILoginService loginService, ILogger<AuthController> logger, IUserAuthService userAuthService)
     {   
         _loginService = loginService;
@@ -24,7 +31,8 @@ public class AuthController : ControllerBase
     [AllowAnonymous]
     public IActionResult SignIn([FromBody] UserDTO user)
     {
-        _logger.LogInformation("Attempting to sign in user: {username}", user.Username);
+        var sanitizedUsername = SanitizeForLog(user?.Username);
+        _logger.LogInformation("Attempting to sign in user: {username}", sanitizedUsername);
         if(user == null || string.IsNullOrEmpty(user.Username) || string.IsNullOrEmpty(user.Password))
         {
             _logger.LogWarning("Invalid user data for sign in attempt");
@@ -34,7 +42,7 @@ public class AuthController : ControllerBase
         var token = _loginService.ValidateCredentials(user);
         if (token == null) return Unauthorized();
 
-        _logger.LogInformation("User {username} signed in successfully", user.Username);
+        _logger.LogInformation("User {username} signed in successfully", sanitizedUsername);
         return Ok(token);
     }
 
