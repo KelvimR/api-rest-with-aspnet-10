@@ -1,11 +1,13 @@
 ﻿using api_rest_with_aspnet_10.Data.DTO.V1;
 using api_rest_with_aspnet_10.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace api_rest_with_aspnet_10.Controllers;
 
 [ApiController]
 [Route("api/[controller]/v1")]
+[Authorize("Bearer")]
 public class BookController : ControllerBase
 {
     private readonly IBookService _bookService;

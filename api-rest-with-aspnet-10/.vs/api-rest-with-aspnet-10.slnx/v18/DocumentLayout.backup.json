@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:controllers\\personcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|c:\\temp\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\services\\implementations\\loginserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C6E3FA90-A5B0-EDAA-4232-042DB9CE7EDA}|api-rest-with-aspnet-10.csproj|solutionrelative:services\\implementations\\loginserviceimpl.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,24 +18,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PersonController.cs",
-              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\PersonController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PersonController.cs",
-              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\PersonController.cs",
-              "RelativeToolTip": "Controllers\\PersonController.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAowGkAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-30T14:15:33.03Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Bookmark",
@@ -40,6 +31,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LoginServiceImpl.cs",
+              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Services\\Implementations\\LoginServiceImpl.cs",
+              "RelativeDocumentMoniker": "Services\\Implementations\\LoginServiceImpl.cs",
+              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Services\\Implementations\\LoginServiceImpl.cs",
+              "RelativeToolTip": "Services\\Implementations\\LoginServiceImpl.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAawEAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T14:52:24.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "C:\\TEMP\\api-rest-with-aspnet-10\\api-rest-with-aspnet-10\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAcwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-07-07T14:34:29.817Z",
+              "EditorCaption": ""
             }
           ]
         }

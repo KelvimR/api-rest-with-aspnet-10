@@ -33,7 +33,7 @@ public static class AuthConfig
                 ValidateIssuerSigningKey = true,
                 ValidIssuer = tokenConfiguration.Issuer,
                 ValidAudience = tokenConfiguration.Audience,
-                ValidIssuerSigninKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenConfiguration.Secret))
+                IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(tokenConfiguration.Secret))
             };
 
         });

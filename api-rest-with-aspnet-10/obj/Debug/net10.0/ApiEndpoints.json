@@ -1,5 +1,63 @@
 [
   {
+    "ContainingType": "api_rest_with_aspnet_10.Controllers.AuthController",
+    "Method": "Create",
+    "RelativePath": "api/auth/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_rest_with_aspnet_10.Controllers.AuthController",
+    "Method": "Refresh",
+    "RelativePath": "api/auth/refresh",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "token",
+        "Type": "api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_rest_with_aspnet_10.Controllers.AuthController",
+    "Method": "Revoke",
+    "RelativePath": "api/auth/revoke",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "api_rest_with_aspnet_10.Controllers.AuthController",
+    "Method": "SignIn",
+    "RelativePath": "api/auth/signin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "user",
+        "Type": "api_rest_with_aspnet_10.Data.DTO.V1.UserDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "api_rest_with_aspnet_10.Controllers.BookController",
     "Method": "Get",
     "RelativePath": "api/book/v1",

@@ -1,5 +1,6 @@
 ﻿using api_rest_with_aspnet_10.Data.DTO.V1;
 using api_rest_with_aspnet_10.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace api_rest_with_aspnet_10.Controllers;
 
 [ApiController]
 [Route("api/[controller]/v1")]
+[Authorize("Bearer")]
 //[EnableCors("LocalPolicy")] // Assim aplica o cors a todo o controller
 public class PersonController : ControllerBase
 {
