@@ -15,6 +15,156 @@
     "version": "v1"
   },
   "paths": {
+    "/api/auth/signin": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.UserDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.UserDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.UserDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.UserDTO"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.UserDTO"
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.UserDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/refresh": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO"
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/revoke": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/auth/create": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO"
+              }
+            },
+            "application/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO"
+              }
+            },
+            "text/xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO"
+              }
+            },
+            "application/*+xml": {
+              "schema": {
+                "$ref": "#/components/schemas/api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/book/v1": {
       "get": {
         "tags": [
@@ -1341,6 +1491,24 @@
         },
         "additionalProperties": { }
       },
+      "api_rest_with_aspnet_10.Data.DTO.V1.AccountCredentialsDTO": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          },
+          "fullname": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
       "api_rest_with_aspnet_10.Data.DTO.V1.BookDTO": {
         "type": "object",
         "properties": {
@@ -1400,10 +1568,52 @@
           }
         },
         "additionalProperties": false
+      },
+      "api_rest_with_aspnet_10.Data.DTO.V1.TokenDTO": {
+        "type": "object",
+        "properties": {
+          "authenticated": {
+            "type": "boolean"
+          },
+          "created": {
+            "type": "string",
+            "nullable": true
+          },
+          "expiration": {
+            "type": "string",
+            "nullable": true
+          },
+          "accessToken": {
+            "type": "string",
+            "nullable": true
+          },
+          "refreshToken": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "api_rest_with_aspnet_10.Data.DTO.V1.UserDTO": {
+        "type": "object",
+        "properties": {
+          "username": {
+            "type": "string",
+            "nullable": true
+          },
+          "password": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
       }
     }
   },
   "tags": [
+    {
+      "name": "Auth"
+    },
     {
       "name": "Book"
     },
